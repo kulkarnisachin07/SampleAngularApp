@@ -27,17 +27,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - name: Install Angular
-        run: npm install -g @angular/cli
-        
-   #   - name: Build Angular Project
-    #    run: ng build
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: pwd
-      - name: Run ls
-        run: ls
+      - name: Install Angular and node modules
+        run: |
+          npm install -g @angular/cli
+          npm install        
+      - name: Build Angular Project
+        run: ng build   
          
 
       # Runs a set of commands using the runners shell
