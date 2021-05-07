@@ -30,8 +30,8 @@ jobs:
       - name: Install Angular
         run: npm install -g @angular/cli
         
-      - name: Build Angular Project
-        run: ng build
+   #   - name: Build Angular Project
+    #    run: ng build
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
